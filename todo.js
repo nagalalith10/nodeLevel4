@@ -10,6 +10,7 @@ const todoList = () => {
 
   let today = new Date().toLocaleDateString("en-CA");
   // let today = new Date().toISOString().split("T")[0];
+  //today
 
   const overdue = () => {
     return all.filter((todo) => {
@@ -22,7 +23,7 @@ const todoList = () => {
       return todo.dueDate === today;
     });
   };
-
+//duelater const
   const dueLater = () => {
     return all.filter((todo) => {
       return todo.dueDate > today;
